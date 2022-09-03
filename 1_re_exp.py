@@ -6,7 +6,7 @@ import unicodedata
 # f = codecs.open('re_exp/friends101.txt', 'r', encoding='utf-8')
 # script101 = f.read()
 
-with open('re_exp/friends101.txt', 'r', encoding='utf-8') as f:
+with open('friends101.txt', 'r', encoding='utf-8') as f:
     script101 = f.read()
 
 normal_script101 = unicodedata.normalize("NFKD", script101)  # 문자열의 '\xa0' 없애기
@@ -20,7 +20,7 @@ for i in line:
     monica += i + "\n" # 리스트로 되어았는 모니카의 대사를 전부다 문자열로 더하고 한요소가 더해지면 줄을 바꾼다.
 
 # monica 객체의 내용을 텍스트파일을 만들어 거기에 쓴다.    
-with open('re_exp/Monica.txt', 'w', encoding='utf-8') as m:
+with open('Monica.txt', 'w', encoding='utf-8') as m:
     m.write(monica) 
     
 
