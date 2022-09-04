@@ -22,5 +22,5 @@ for i in line:
 # monica 객체의 내용을 텍스트파일을 만들어 거기에 쓴다.    
 with open('Monica.txt', 'w', encoding='utf-8') as m:
     m.write(monica) 
-    
+
 
